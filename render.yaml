@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: pdf-merger-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.x
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        fromService:
+          name: pdf-merger-database
+          type: database
+          property: connectionString
+  - type: database
+    name: pdf-merger-database
+    env: mongodb
+    ipAllowList: []
+    plan: free
