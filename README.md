@@ -54,5 +54,5 @@ Contributions are welcome! Please read the contributing guidelines.
 ## License
 This project is open-source.
 
-## Contact
-Shivansh - [Your Contact Information]
+
+
