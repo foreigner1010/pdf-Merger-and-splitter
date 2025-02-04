@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm install",
+  "startCommand": "npm start",
+  "envVars": {
+    "PORT": "5000",
+    "NODE_VERSION": "18.x"
+  },
+  "routes": [
+    {
+      "type": "web",
+      "source": "/",
+      "destination": "backend/src/index.js"
+    }
+  ]
+}
